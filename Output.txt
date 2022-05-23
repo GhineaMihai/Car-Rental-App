@@ -1,0 +1,3 @@
+1,300,BMW,X6
+2,150,Suzuki,Ignis
+1,200,BMW,e46

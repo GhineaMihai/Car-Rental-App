@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.carrentaljavafx.HelloController">
+    <children>
+      <ImageView fitHeight="800.0" fitWidth="800.0" layoutX="14.0" layoutY="-61.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Sticker-Ne-plac-femeile-dar-iubim-masinile-Monocrom-1.png" />
+         </image>
+      </ImageView>
+        <Button fx:id="add" layoutX="14.0" layoutY="27.0" mnemonicParsing="false" onAction="#PressAdd" prefHeight="25.0" prefWidth="198.0" text="Add" textAlignment="CENTER" />
+        <Button fx:id="remove" layoutX="14.0" layoutY="127.0" mnemonicParsing="false" onAction="#PressRemove" prefHeight="25.0" prefWidth="198.0" text="Remove" textAlignment="CENTER" />
+        <ComboBox fx:id="print" layoutX="577.0" layoutY="27.0" onAction="#PressPrint" prefHeight="25.0" prefWidth="198.0" promptText="Print Options" />
+        <Button fx:id="reserve" layoutX="577.0" layoutY="77.0" mnemonicParsing="false" onAction="#PressReserve" prefHeight="25.0" prefWidth="198.0" text="Reserve" textAlignment="CENTER" />
+        <Button fx:id="cancel" layoutX="577.0" layoutY="202.0" mnemonicParsing="false" onAction="#PressCancel" prefHeight="25.0" prefWidth="198.0" text="Cancel Reservation" textAlignment="CENTER" />
+        <Button fx:id="show" layoutX="577.0" layoutY="251.0" mnemonicParsing="false" onAction="#PressShow" prefHeight="25.0" prefWidth="198.0" text="Show Reservation Date" textAlignment="CENTER" />
+        <ComboBox fx:id="file" layoutX="14.0" layoutY="289.0" onAction="#PressFile" prefHeight="25.0" prefWidth="198.0" promptText="File" />
+        <ComboBox fx:id="binary" layoutX="14.0" layoutY="314.0" onAction="#PressBinary" prefHeight="25.0" prefWidth="198.0" promptText="Binary" />
+        <Button fx:id="chkwho" layoutX="163.0" layoutY="177.0" mnemonicParsing="false" onAction="#PressWho" text="Check" textAlignment="CENTER" />
+        <TextField fx:id="txtwhat" alignment="CENTER" layoutX="14.0" layoutY="251.0" />
+        <Button fx:id="chkwhat" layoutX="163.0" layoutY="251.0" mnemonicParsing="false" onAction="#PressWhat" text="Check" textAlignment="CENTER" />
+        <TableView fx:id="table" layoutX="30.0" layoutY="426.0" prefHeight="340.0" prefWidth="736.0">
+            <columns>
+                <TableColumn fx:id="colId" prefWidth="184.0" text="Id" />
+                <TableColumn fx:id="colName" prefWidth="184.0" text="Name" />
+                <TableColumn fx:id="colPrice" prefWidth="184.0" text="Price" />
+                <TableColumn fx:id="colModel" prefWidth="184.0" text="Model" />
+            </columns>
+        </TableView>
+        <TextField fx:id="name" alignment="CENTER" layoutX="14.0" layoutY="52.0" prefHeight="25.0" prefWidth="198.0" promptText="Name" />
+        <TextField fx:id="price" alignment="CENTER" layoutX="14.0" layoutY="102.0" prefHeight="25.0" prefWidth="198.0" promptText="Price" />
+        <TextField fx:id="model" alignment="CENTER" layoutX="14.0" layoutY="77.0" prefHeight="25.0" prefWidth="198.0" promptText="Model" />
+      <TextField fx:id="day" alignment="CENTER" layoutX="577.0" layoutY="127.0" prefHeight="25.0" prefWidth="198.0" promptText="Day" />
+      <TextField fx:id="month" alignment="CENTER" layoutX="577.0" layoutY="152.0" prefHeight="25.0" prefWidth="198.0" promptText="Month" />
+      <TextField fx:id="year" alignment="CENTER" layoutX="577.0" layoutY="177.0" prefHeight="25.0" prefWidth="198.0" promptText="Year" />
+      <TextField fx:id="namersrv" alignment="CENTER" layoutX="577.0" layoutY="102.0" prefHeight="25.0" prefWidth="198.0" promptText="Name" />
+      <Label fx:id="dates" alignment="CENTER" layoutX="577.0" layoutY="277.0" prefHeight="25.0" prefWidth="198.0" text="Date" textFill="WHITE" />
+      <Button fx:id="chkmany" layoutX="163.0" layoutY="227.0" mnemonicParsing="false" onAction="#PressMany" text="Check" textAlignment="CENTER" />
+      <Label fx:id="txtwho" alignment="CENTER" layoutX="14.0" layoutY="177.0" prefHeight="25.0" prefWidth="149.0" textFill="WHITE" />
+      <Button fx:id="chkif" layoutX="163.0" layoutY="202.0" mnemonicParsing="false" onAction="#PressIf" text="Check" textAlignment="CENTER" />
+      <Label fx:id="txtif" alignment="CENTER" layoutX="14.0" layoutY="202.0" prefHeight="25.0" prefWidth="149.0" textFill="WHITE" />
+      <TextField fx:id="txtmany" alignment="CENTER" layoutX="14.0" layoutY="227.0" />
+      <Label fx:id="txtmany1" layoutX="212.0" layoutY="227.0" prefHeight="25.0" prefWidth="28.0" textFill="WHITE" />
+    </children>
+</Pane>
